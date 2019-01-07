@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hung Tran</title>
+    <!-- This is the link for Icons from website  https://fontawesome.com/start -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Put the boostrap link above rel (Requirement) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<!--The data spy for smooth scrolling. Target the main navigation bar. You have to initialize the
+smoothing and writing some scripting code in the bottom of the file-->
+<body data-spy="scroll" data-target="#main-nav" id="home">
+    <!-------------------------------------------------MENU------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------>
+
+    <!-- create a menu. The menu will change in small screen. Dark color and fixed top-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+        <!-- Create a container class to make all the item of the nav bar stay in the middle -->
+        <div class="container">
+            <!-- this is a brand of nav bar-->
+            <a href="Mainpage.html" class="navbar-brand">Hung Tran</a>
+            <!--Create a button that toggle when clicked. Toggle will be collapse style 
+            the collapse will happen to the id navbarCollapse-->
+            <button class="navbar-toggler" data-toggle="collapse" data-target = "#collapseBar">
+                <!--put the toggle item in here-->
+                <span class="navbar-toggler-icon"></span>                
+            </button>
+            
+            <!--Once the bar basic feature is set up. Start to make a navigation bar with ID collapseBar-->
+            <div class="collapse navbar-collapse" id="collapseBar">
+                <!--create an unordered list with auto margin left -->
+                <ul class="navbar-nav ml-auto">
+                    <!--create each item in the navigation bar-->
+                    <li class="nav-item">
+                        <!--This is Home button will direct the page to home which is the beginning of page-->
+                        <a href="#home-section" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                            <!--This is About Me button will direct the page to About Me section-->
+                            <a href="#aboutme" class="nav-link">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                            <!--This is About Me button will direct the page to About Me section-->
+                            <a href="#explore" class="nav-link">Explore</a>
+                    </li>                    
+
+                    <li class="nav-item">
+                            <!--This is My Projects button which directs the page to Project section-->
+                            <a href="#project" class="nav-link">My Projects</a>
+                    </li>                    
+
+                    <li class="nav-item">
+                            <!--This is resume button will direct the page to resume section-->
+                            <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------------------------------HOME------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------>
+
+    <!-- create a Home Section which is big home first layer. Every item will be inside this layer-->
+    <header id="home-section">
+        <!--Give an dark overlay to the back ground. To make text easier to read  -->
+        <div class="dark-overlay">
+            <!--Create is a text box inside the home section-->
+            <div class="home-inner container">
+                <!--Create a responsive grid -->                
+                <div class="row">
+                    <!--Create a first column size 8 
+                    If the brower size is less than large 8, then do not display
+                    else display as large text inside a block-->
+                    <div class="col-lg-8 d-none d-lg-block">
+                        <!--Create a header inside the block-->
+                        <h1 class="display-4">
+                            Build <strong>social profile</strong> and <strong>more</strong>          
+                        </h1>
+                        <!-- create a flex box "d-flex" class will align all the text horizontally-->
+                        <div class="d-flex">
+                            <!--All the Item will have padding 4 and align it self as starting of the text-->
+                            <div class="p-4 align-self-start">
+                                <!--this class is to get check icon from front awesome link
+                                then make the size 2 times bigger than normal-->
+                                <i class="fas fa-check fa-2x"></i>
+                            </div>
+                            <!--All the Item will have padding 4 and align it self as starting of the text-->                            
+                            <div class="p-4 align-self-end">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ad asperiores.
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                                <!--All the Item will have padding 4 and align it self as starting of the text-->
+                                <div class="p-4 align-self-start">
+                                    <!--this class is to get check icon from front awesome link
+                                    then make the size 2 times bigger than normal-->
+                                    <i class="fas fa-check fa-2x"></i>
+                                </div>
+                                <!--All the Item will have padding 4 and align it self as starting of the text-->                            
+                                <div class="p-4 align-self-end">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ad asperiores.
+                                </div>
+                        </div>
+
+                        <div class="d-flex">
+                                <!--All the Item will have padding 4 and align it self as starting of the text-->
+                                <div class="p-4 align-self-start">
+                                    <!--this class is to get check icon from front awesome link
+                                    then make the size 2 times bigger than normal-->
+                                    <i class="fas fa-check fa-2x"></i>
+                                </div>
+                                <!--All the Item will have padding 4 and align it self as starting of the text-->                            
+                                <div class="p-4 align-self-end">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ad asperiores.
+                                </div>
+                        </div>
+
+                    </div>
+                    
+                    <!--Create a second column size 4-->
+                    <div class="col-lg-4">
+                        <!--The item inside this column will be a sign up card
+                        back ground is primary color, all the text is centered
+                        and this card contains form-->
+                        <div class="card bg-primary text-center card-form">
+                            <!--Create a box which contain card body-->
+                            <div class="card-body">
+                                <!--Create header of the body with size is h3-->
+                                <h3>Sign Up Today</h3>
+                                <!--Create paragraph of the body-->
+                                <p>Fill Things Out</p>
+                                <!--Create a form -->
+                                <form>
+                                    <!--Create different item for the form with differect place holder-->
+                                    <div class="form-group">
+                                        <!--create a input box type text which will take in text as input.
+                                        form-control class is an item inside form-group-->
+                                        <input type="text" class="form-control form-control-lg" placeholder="Username">
+                                    </div>
+
+                                    <div class="form-group">
+                                            <input type="text" class="form-control form-control-lg" placeholder="Password">
+                                    </div>
+
+                                    <div class="form-group">
+                                            <input type="text" class="form-control form-control-lg" placeholder="Email">
+                                    </div>
+
+                                    <div class="form-group">
+                                            <input type="text" class="form-control form-control-lg" placeholder="Name">
+                                    </div>
+                                    <!--Create a submit button for the form with type is submit. The reason this is
+                                    input type instead button type because it takes the click on it as input. Make the button
+                                    looks good with boostrap class btn. btn-block will make the button as wide as the block-->
+                                    <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-------------------------------------------------ABOUT ME--------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------>
+    <!--create a section called about me-->
+    <section id="aboutme">
+        <!--wrap all the text of section inside a container class-->
+        <div class="container">
+            <div class="row">
+                <!--create a single column with padding y axis is 5-->
+                <div class="col text-center py-5">
+                    <h1 class="display-4">About Me</h1>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Dolor iste maiores aliquam tenetur nobis officiis delectus deserunt beatae fuga vel.
+                    </p>
+                    <!--Create a button to link to another page about me-->
+                    <a href="#" class="btn btn-outline-secondary">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-------------------------------------------------EXPLORE---------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------>
+    <!--create a section called explore-->
+    <section id="explore" class="bg-light text-muted py-5">
+         <!--wrap all the text of section inside a container class-->
+        <div class="container">
+            <!--create a grid-->
+            <div class="row">
+                <!--Create 2 column. If the brower size is less than 6, column 1 will be on top
+                of column 2-->
+                <!--create column 1-->
+                <div class="col-md-6">
+                    <!--Create a image img-fluid will change the size itself depending on its container
+                    margin bottom 3. and the imaged will be grounded-->
+                    <img src="Images/homeBackground.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+                </div>
+                <!--create column 2-->
+                <div class="col-md-6">
+                    <h3>Explore & Connect</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Amet incidunt nulla ut dicta odio architecto expedita vero, sequi placeat eum!
+                </p>
+
+                <!--create a flex box-->
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <!--Put check icon as begining-->
+                        <i class="fas fa-check fa-2x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Deleniti quis voluptatem excepturi minus in! Dicta quis tempore inventore laboriosam quisquam!</p>
+                    </div>
+                </div>
+
+                <!--create a flex box-->
+                <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <!--Put check icon as begining-->
+                            <i class="fas fa-check fa-2x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Deleniti quis voluptatem excepturi minus in! Dicta quis tempore inventore laboriosam quisquam!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------------------------MY PROJECTS------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------>
+    <!--create a section called about me-->
+    <section id="project">
+            <!--wrap all the text of section inside a container class-->
+        <div class="dark-overlay">
+            <div class="container">
+                <div class="row">
+                    <!--create a single column with padding y axis is 5-->
+                    <div class="col text-center py-5">
+                        <h1 class="display-4">My Project</h1>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Dolor iste maiores aliquam tenetur nobis officiis delectus deserunt beatae fuga vel.
+                        </p>
+                        <!--Create a button to link to another page about me-->
+                        <a href="#" class="btn btn-outline-light">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        
+    <!-------------------------------------------------RESUME----------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------>
+    <!--create a section called explore-->
+    <section id="Resume" class="py-5">
+            <!--wrap all the text of section inside a container class-->
+        <div class="container">
+            <!--create a grid-->
+            <div class="row">
+                <!--Create 2 column. If the brower size is less than 6, column 1 will be on top
+                of column 2-->
+                <!--create column 1-->
+                <div class="col-md-6">
+                    <h3>Resume</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Amet incidunt nulla ut dicta odio architecto expedita vero, sequi placeat eum!
+                    </p>
+
+                    <!--create a flex box-->
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <!--Put check icon as begining-->
+                            <i class="fas fa-check fa-2x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Deleniti quis voluptatem excepturi minus in! Dicta quis tempore inventore laboriosam quisquam!</p>
+                        </div>
+                    </div>
+
+                    <!--create a flex box-->
+                    <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <!--Put check icon as begining-->
+                                <i class="fas fa-check fa-2x"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Deleniti quis voluptatem excepturi minus in! Dicta quis tempore inventore laboriosam quisquam!</p>
+                            </div>
+                    </div>
+                </div>
+
+                <!--create column 2-->
+                <div class="col-md-6">
+                    <!--Create a image img-fluid will change the size itself depending on its container
+                    margin bottom 3. and the imaged will be grounded-->
+                    <img src="Images/homeBackground.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------------------------FOOTER----------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------>
+    <!--This class is to create a copy right-->
+    <footer id="main-footer" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-4">
+                    <h3>Hung Tran</h3>
+                    <!-- & copy dynamically get the current year-->
+                    <p>Copyright &copy; <span id="year"></span></p>
+                    <!--Create a button to help viewer contact the creator-->
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</btn-primary>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-----------------------------------------------CONTACT MODAL------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------>
+    <!--When the user click Contact Us, contact modal will show up-->    
+    <div class="modal fade text-dark" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+ 
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <!--Create a box to take in text message-->
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- This is the script from https://code.jquery.com for jquery  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>    
+    <!-- These are JS link from bootstrap websiste. Must put above the last body tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" 
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <!--This script is for smooth scrolling. You have to initialize them the wrote smooth schooling.
+    Dont forget to add data-spy="scroll" data-target="#main-nav" id="home" to the BODY-->
+    <script>
+        // this is to get the current year for the copy right
+        $('#year').text(new Date().getFullYear()); // this is j query command to get the year
+
+        // Initialize Scrollspy
+        $('body').scrollspy({target: '#main-nav'});
+
+        // Smooth Scrolling
+        $('#main-nav a').on('click', function (event)
+        {
+            if(this.hash !=="")
+            {
+                event.preventDefault();
+                const hash=this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top} , 800, function() {
+                        window.location.hash=hash;
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

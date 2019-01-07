@@ -1,0 +1,95 @@
+/*Change the back ground of the body to black and text color to white*/
+body 
+{
+    background: #333;
+    color: #fff;
+}
+/*Create a bottom border blue line for the navigation bar
+Make the navigation bar transcolor with 0.8*/
+.navbar
+{
+    border-bottom: #008ed6 3px solid;
+    opacity: 0.8;  
+}
+/*In the Home section*/
+#home-section
+{
+    /*Give the black ground a picture*/
+    background: url(../Images/homeBackground.jpg);
+    /*Do not repeat the image if the brower size is bigger than picture size*/
+    background-repeat: no-repeat;
+    /*Resize the background image to cover the entire container,
+     even if it has to stretch the image or cut a little bit off one of the edges */
+    background-size: cover;
+    /*	The background image will not scroll with the page*/
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 700px;
+}
+/*In the dark-overlay div*/
+#home-section .dark-overlay
+{
+    /*An element with position: absolute; is positioned relative to
+    the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*Give the home section minimum of heigh is 700px*/
+    min-height: 700px;
+    background: rgba(0,0,0,0.7)
+}
+
+#home-section .home-inner
+{
+    padding-top: 150px;
+}
+
+#home-section .card-form
+{
+    opacity: 0.7;
+}
+/*Put a box outside the icon*/
+#home-section .fas, #Resume .fas
+{
+    color: #008ed6;
+    background: white;
+    padding: 5px;
+    /*Curve the edges of the background box*/
+    border-radius: 5px;
+}
+
+#explore .fas
+{
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#Resume
+{
+    color: white;
+}
+
+#project
+{
+    /*Give the black ground a picture*/
+    background: url(../Images/homeBackground1.jpg);
+    /*Do not repeat the image if the brower size is bigger than picture size*/
+    background-repeat: no-repeat;
+    /*Resize the background image to cover the entire container,
+     even if it has to stretch the image or cut a little bit off one of the edges */
+    background-size: cover;
+    /*	The background image will not scroll with the page*/
+    background-attachment: fixed;
+    background-position: center;  
+}
+
+#project .dark-overlay
+{
+    /*An element with position: absolute; is positioned relative to
+    the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).*/
+    width: 100%;
+    background: rgba(0,0,0,0.7)
+}
